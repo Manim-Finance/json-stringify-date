@@ -1,6 +1,6 @@
 {
   "name": "@manim-finance/json-stringify-date",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Like JSON.stringify, but preserve timezones in date objects and parse dates into Date object",
   "main": "index.js",
   "browser": "browser.js",
@@ -15,6 +15,9 @@
     "mocha-chrome": "^2.2.0",
     "nyc": "^15.1.0",
     "should": "^13.2.3"
+  },
+  "publishConfig": {
+    "@manim-finance:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "preversion": "npm run test:release",
@@ -31,7 +34,7 @@
     "retag": "export GIT_TAG=$(npm run env | grep npm_package_version | cut -d '=' -f 2) && git commit -a --amend --no-edit && git tag -f $GIT_TAG",
     "push": "git push && git push --tag"
   },
-  "repository": "git://github.com/fmenezes/json-stringify-date",
+  "repository": "git://github.com/Manim-Finance/json-stringify-date",
   "keywords": [
     "json",
     "stringify",
