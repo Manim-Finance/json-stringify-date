@@ -4,7 +4,7 @@ module.exports = (function () {
     var options = {
         utc: false,
         fnCheck: function (_, value) {
-            return (typeof value === 'string') && moment(value, moment.ISO_8601, true).isValid() && value.length >= 6;
+            return (typeof value === 'string') && moment(value, "YYYY-MM-DDTHH:mm:ssZ", true).isValid() && value.length >= 6;
         },
     };
 

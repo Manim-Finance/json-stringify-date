@@ -1,6 +1,6 @@
 {
   "name": "@manim-finance/json-stringify-date",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Like JSON.stringify, but preserve timezones in date objects and parse dates into Date object",
   "main": "index.js",
   "browser": "browser.js",
